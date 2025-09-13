@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid_3_1fr {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+header,
+section {
+  padding: 2rem;
+}
+
+/********** Billede styling **********/
+img {
+  max-width: 100%;
+  border-radius: 7%;
+  margin-top: 1rem;
+}
+
+/*********** Baggrund **********/
+
+body {
+  background-color: #f6e6c7;
+}
+
+/************** skillelinje ***************/
+hr {
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/********** text styling ***********/
+p {
+  line-height: 1.3rem;
+}
+
+.text1 {
+  font-size: larger;
+  margin-top: 2%;
+  font-weight: 600;
+}
+
+.text2 {
+  font-style: italic;
+}
+
+.text3 {
+  font-size: xx-large;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.text4 {
+  font-size: larger;
+  font-style: italic;
+  margin-top: 2%;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-size: 5rem;
+  font-style: normal;
+  color: #929433;
+}
+
+h2 {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+/******************************************** desktop *************************************************/
+@media (min-width: 760px) {
+  .grid_3_1fr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .grid_2_1fr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  /************** baggrund **********/
+  body {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  html {
+    background-color: white;
+  }
+
+  /*************** section *************/
+  .section_bag_farve {
+    background-color: #ffb5a7;
+  }
+}
