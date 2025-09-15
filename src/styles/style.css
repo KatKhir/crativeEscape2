@@ -26,6 +26,10 @@ img {
   display: none;
 }
 
+.logo {
+  height: 70px;
+  margin-left: 10px;
+}
 /*********** Baggrund **********/
 
 body {
@@ -41,6 +45,30 @@ hr {
   margin-top: 40px;
 }
 
+/******************* navigation *******************/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  position: sticky;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #929433;
+}
+
+.margin_right {
+  margin-right: 15px;
+}
 /********** text styling ***********/
 p {
   line-height: 1.3rem;
@@ -92,6 +120,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+    margin-top: 25px;
   }
 
   .grid_2_1fr {
@@ -100,6 +129,7 @@ h2 {
     gap: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 25px;
   }
 
   .grid_1_1 {
@@ -114,7 +144,7 @@ h2 {
   }
 
   html {
-    background-color: white;
+    background-color: #fbf5e6;
   }
 
   /*************** section *************/
