@@ -22,6 +22,10 @@ img {
   margin-top: 1rem;
 }
 
+.img_display_none {
+  display: none;
+}
+
 /*********** Baggrund **********/
 
 body {
@@ -116,5 +120,11 @@ h2 {
   /*************** section *************/
   .section_bag_farve {
     background-color: #ffb5a7;
+  }
+
+  /**************** img **************/
+
+  .img_display_none {
+    display: block;
   }
 }
