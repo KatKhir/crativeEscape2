@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro"
+import "../styles/style.css"
 ---
 
 <html lang="en">
@@ -8,15 +9,26 @@ import Card from "../components/Card.astro"
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Mrs+Sheppards&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Barrio&family=Mrs+Sheppards&display=swap" rel="stylesheet">
 		<title>Café Overview</title>
 	</head>
 	<body>
+        <nav>
+            <a href="/" > <img  class="logo" src="/img/logo.webp" alt="Creative Escape logo"></a>
+			<div class="nav-links a">
+			<a class="margin_right" href="/">Home</a> 
+			<a href="/caféer">Café Overview</a>
+		</nav>
 		<header>
-            
+            <h1>Café Overview</h1>
         </header>
 		<section>
 			<hr>
-			<h2>Stylish & cozy cafés</h2>
+			<h2>STYLISH & COZY CAFÉS</h2>
 			<p>Each café holds its own unique charm – from rustic coffee bars to modern oases. Plan your next café visit below.</p>
 			<div class="grid_3_1fr">
 <Card img="/img/folketskaffe.webp" text1="Folkets Kaffe" text2= "Borups Allé 2, 2200 København N" url="https://www.facebook.com/FolketsKaffe" igUrl="https://www.instagram.com/folketskaffe/"/>
@@ -28,5 +40,18 @@ import Card from "../components/Card.astro"
 </div>
 <hr>
 </section>
+
+
+<section class="section_bag_farve">
+<h2>Spots For Laptops</h2>
+<div class="grid_2_1fr ">
+<Card img="/img/folketskaffe.webp" text3="MOKKARIET" text4="Jagtvej 72, 2200 Nørrebro"/>
+<Card img="/img/lele.webp" text3="PALUDANS BOGCAFÉ" text4="Fiolstræde 10, 1171 København"/>
+<Card img="/img/sonny.webp" text3="STUDENTERHUSET" text4="Købmagergade 52, 1150 København"/>
+<Card img="/img/madogkaffe.webp" text3="MINAS KAFFEBAR" text4="Nørrebrogade 75, 2200 København"/>
+</div>
+</section>
+
+
 	</body>
 </html>
