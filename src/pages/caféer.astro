@@ -8,24 +8,25 @@ import Card from "../components/Card.astro"
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Forside</title>
+		<title>Café Overview</title>
 	</head>
 	<body>
-		<img src="">
-		<h1>Caféer i København</h1>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum ipsa corporis. Minima ipsa quod rem maxime at quos sunt placeat ipsum, natus porro in, soluta quam tempora ad veniam?</p>
-
+		<header>
+            
+        </header>
 		<section>
-<h2>Charme og atmosfære</h2>
-<Card img="/img/folketskaffe.webp" text="Folkets Kaffe - Borups Allé 2, 2200 København N" link1="Hjemmeisde" link2="Insta"/>
-<Card img="/img/lele.webp" text="Lélé - Nordre Frihavnsgade 101, 2100 København" link1="Hjemmeisde" link2="Insta"/>
-<Card img="/img/sonny.webp" text="Sonny - Frederiksberg Allé 12, 1820 Frederiksberg" link1="Hjemmeisde" link2="Insta"/>
-<Card img="/img/madogkaffe.webp" text="Mad & Kaffe Frederiksberg - Godthåbsvej 45, 2000 Frederiksberg" link1="Hjemmeisde" link2="Insta"/>
-<Card img="/img/lipa.webp" text="Lipa - Ane Katrines Vej 2, 2000 Frederiksberg" link1="Hjemmeisde" link2="Insta"/>
-<Card img="/img/folketskaffe.webp" text="Desserthuset - Frederiksborggade 50, 1360 København K" link1="Hjemmeisde" link2="Insta"/>	
-
+			<hr>
+			<h2>Stylish & cozy cafés</h2>
+			<p>Each café holds its own unique charm – from rustic coffee bars to modern oases. Plan your next café visit below.</p>
+			<div class="grid_3_1fr">
+<Card img="/img/folketskaffe.webp" text1="Folkets Kaffe" text2= "Borups Allé 2, 2200 København N" url="https://www.facebook.com/FolketsKaffe" igUrl="https://www.instagram.com/folketskaffe/"/>
+<Card img="/img/lele.webp" text1="Lélé" text2= "Nordre Frihavnsgade 101, 2100 København" url="https://lelecph.dk" igUrl="https://www.instagram.com/lele_cph/?hl=da"/>
+<Card img="/img/sonny.webp" text1="Sonny" text2= "Frederiksberg Allé 12, 1820 Frederiksberg" url="https://www.sonnycph.dk" igUrl="https://www.instagram.com/sonny.cph/?hl=da"/>
+<Card img="/img/madogkaffe.webp" text1="Mad & Kaffe Frederiksberg" text2= "Godthåbsvej 45, 2000 Frederiksberg" url="https://madogkaffe.dk" igUrl="https://www.instagram.com/madogkaffe/?hl=da"/>
+<Card img="/img/lipa.webp" text1="Lipa" text2= "Ane Katrines Vej 2, 2000 Frederiksberg" igUrl="https://www.instagram.com/lipacph/?hl=da"/>
+<Card img="/img/folketskaffe.webp" text1="Desserthuset" text2= "Frederiksborggade 50, 1360 København K" igUrl="https://www.instagram.com/desserthuset/?hl=da"/>	
+</div>
+<hr>
 </section>
-
-
 	</body>
 </html>

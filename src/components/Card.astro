@@ -1,5 +1,5 @@
 ---
-const {img, text1, text2, text3, text4, link1, link2} = Astro.props
+const {img, text1, text2, text3, text4, url, igUrl} = Astro.props
 ---
 
 
@@ -9,6 +9,6 @@ const {img, text1, text2, text3, text4, link1, link2} = Astro.props
     <p class="text2">{text2}</p>
     <p class="text3">{text3}</p>
     <p class="text4">{text4}</p>
-    <p>{link1}</p>
-    <p>{link2}</p>
+    <a href={url}>Go to website</a>
+    <a href={igUrl}>See Instagram</a> 
 </article>
