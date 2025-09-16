@@ -1,4 +1,5 @@
 ---
+import Button from "../components/Button.astro"
 const {img, text1, text2, text3, text4, url, igUrl} = Astro.props
 ---
 
@@ -9,6 +10,7 @@ const {img, text1, text2, text3, text4, url, igUrl} = Astro.props
     <p class="text2">{text2}</p>
     <p class="text3">{text3}</p>
     <p class="text4">{text4}</p>
-    <a href={url}>Go to website</a>
-    <a href={igUrl}>See Instagram</a> 
+    <Button url={url} variant="primary">Go to website</Button>
+    <Button url={igUrl} variant="ghost">See Instagram</Button>
+    <!-- <a class="link_knap_igUrl" href={igUrl}>See Instagram</a>  -->
 </article>

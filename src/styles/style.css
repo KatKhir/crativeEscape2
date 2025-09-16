@@ -71,7 +71,26 @@ nav {
 }
 /********** text styling ***********/
 p {
-  line-height: 1.3rem;
+  line-height: 1.5rem;
+  font-size: larger;
+}
+
+.p_max {
+  max-width: 600px;
+  margin: auto;
+}
+
+.p_width {
+  max-width: 600px;
+}
+
+.p_center {
+  text-align: center;
+}
+
+.p_center_max {
+  text-align: center;
+  max-width: 600px;
 }
 
 .text1 {
@@ -85,10 +104,10 @@ p {
 }
 
 .text3 {
-  font-size: xx-large;
+  font-size: 23px;
   font-weight: 600;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .text4 {
@@ -104,16 +123,59 @@ h1 {
   font-size: 5rem;
   font-style: normal;
   color: #929433;
+  margin-bottom: 15px;
 }
 
 h2 {
   font-family: "Arsenal", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 35px;
   font-style: normal;
   margin-bottom: 10px;
 }
 
+.center_h2 {
+  text-align: center;
+}
+
+/****************** botton **************/
+.btn {
+  background-color: #ffb5a7;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* .link_knap_url {
+  background-color: #ffb5a7;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.link_knap_igUrl {
+  border: 2px solid #ffb5a7;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+} */
+/**************** footer ****************/
+footer {
+  background-color: #fff;
+}
 /******************************************** desktop *************************************************/
 @media (min-width: 760px) {
   .grid_3_1fr {
